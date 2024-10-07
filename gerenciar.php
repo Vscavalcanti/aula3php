@@ -1,0 +1,1 @@
+<h1>Gerenciamento de Inventarios</h1>
