@@ -1,5 +1,6 @@
 <?php
-include "menu_topo.php"
+include "menu_topo.php";
+include "verificar_logado.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
