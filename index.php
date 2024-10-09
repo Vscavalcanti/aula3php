@@ -1,6 +1,7 @@
 <?php
-include "menu_topo.php";
 include "verificar_logado.php";
+include "menu_topo.php";
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +13,7 @@ include "verificar_logado.php";
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <iframe id="conteudo" name="conteudo" ></iframe>
+    <iframe src="bem_vindo.php" id="conteudo" name="conteudo" ></iframe>
 </body>
 </html>
 

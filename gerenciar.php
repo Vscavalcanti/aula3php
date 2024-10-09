@@ -23,12 +23,16 @@ try{
         $categoria = $item['categoria'];
     echo"
         <div id='cartoes'>
-        <h3>Nº $codigo</h3>
-        <p>$descricao</p>
-        <p>Setor: $setor</p>
-        <p>Categoria: $categoria</p>
-        <button>✏ Editar</button>
-        <button>🗑Deletar</button>
+            <h3>Nº $codigo</h3>
+            <p>$descricao</p>
+            <p>Setor: $setor</p>
+            <p>Categoria: $categoria</p>
+            <a href='formulario_editar.php?cod=$codigo'>
+            <button >✏ Editar</button>
+            </a>
+            <a href='confirmar_deletar.php?cod=$codigo'>
+            <button >🗑Deletar</button>
+            </a>
         </div>
     ";
 }
@@ -36,6 +40,7 @@ try{
 
 }catch(PDOException $erro){
     echo"Falha ao consultar" . $erro->getMessage();
-}
+};
 
+echo isset($_GET['atualizado'])? "<script> alert('Atualizado com sucesso!!');</script>":"";
 ?>
